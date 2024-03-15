@@ -15,7 +15,7 @@ function ClockComponent(){
         }
     }, []);
 
-    function FormatTime(){
+    function formatTime(){
 
         let hours = time.getHours();
         const minutes = time.getMinutes();
@@ -35,7 +35,7 @@ function ClockComponent(){
     return (
         <div className="clock-container">
             <div className="clock">
-                <span>{FormatTime()}</span>
+                <span>{formatTime()}</span>
             </div>
         </div>
     )
